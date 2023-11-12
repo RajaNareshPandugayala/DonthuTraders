@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, "sans-serif" !important;
+}
+
+
+.box_parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+    animation: logo 2s linear infinite;
+}
+
+@keyframes logo {
+
+    0% {
+        transform: scalex(1);
+
+    }
+
+    50% {
+        transform: scalex(0);
+
+    }
+
+    100% {
+        transform: scalex(1);
+
+    }
+
+}
+
+/***********************loading_page.html-Start******************************/
+
+.loading_page_logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Initial rotation angle */
+    font-size: 100px;
+    width: 100px;
+}
+
+/* Define the animation */
+@keyframes logoRotationAnimation {
+
+    0% {
+        transform: translate(-200%);
+        border-radius: 0%;
+        box-shadow: 0px 0px 0px black;
+    }
+
+    25% {
+        transform: translate(0%);
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    50% {
+        transform: translate(150%);
+        border-radius: 0%;
+        box-shadow: 0px 0px 0px black;
+    }
+
+    75% {
+        transform: translate(0%);
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    100% {
+        transform: translate(-200%);
+        border-radius: 0%;
+        box-shadow: 0px 0px 0px black;
+    }
+}
+
+
+/* Apply the rotation animation to the logo element */
+.loading_page_logo {
+    animation: logoWidthAnimation 1.5s linear infinite, logoRotationAnimation 3s linear infinite;
+    /* Adjust the duration and animation timing as needed */
+}
+
+/***********************loading_page.html-End******************************/
+
+/*************************.Home_page_div.html-Start*******************************/
+.Home_page_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(230, 228, 228);
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+}
+
+.logoAndText {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.logo_text {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.searchBarButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search_input {
+    height: 50px;
+}
+
+.search_input {
+    width: 350px;
+    border-radius: 0.5cm;
+    padding-left: 10px;
+    border: 1px solid gray;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    width: 50%;
+    color: gray;
+}
+
+.aboutAll:hover {
+    cursor: pointer;
+    color: darkred;
+}
+
+.body_images img {
+    width: 250px;
+    height: 350px;
+    box-shadow: 5px 5px 25px gray;
+    border-radius: 0.5cm;
+}
+
+.body_images img:hover {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transform: translatey(-5px);
+}
+
+.body_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+}
+
+.bodyAndFooter {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.body_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.para_div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: start;
+    padding: 55px;
+}
+
+.para_div p {
+    /* font-size: 18px; */
+    color: darkolivegreen;
+}
+
+.para_div ul {
+    /* font-size: 18px; */
+    color: darkolivegreen;
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+
+}
+
+.para_text,
+.para_button_text {
+    width: 855px;
+}
+
+.para_text ul li {
+    color: darkolivegreen;
+}
+
+.para img,
+.paraForButton img {
+    width: 250px;
+    height: 350px;
+    box-shadow: 5px 5px 25px gray;
+    border-radius: 0.5cm;
+}
+
+
+.para img:hover,
+.paraForButton img:hover {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transform: translatey(-5px);
+}
+
+.para_button {
+    display: flex;
+}
+
+.start_para_button {
+    width: 255px;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+}
+
+.start_para_button:hover {
+    color: darkcyan;
+}
+
+.paraButtonTextImage {
+    display: flex;
+    font-family: Calibri, sans-serif;
+}
+
+.paraButtonTextImage p,
+ol,
+ul,
+li {
+    color: darkslategrey;
+}
+
+.button_ol {
+    margin-left: 30px;
+}
+
+
+.footer_div {
+    display: flex;
+    width: 1250px;
+    border-radius: 1cm;
+    justify-content: space-around;
+    background-color: rgb(207, 246, 128);
+    padding: 25px 0px;
+}
+
+.followImages img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.contactFrom {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(207, 246, 128);
+    padding: 25px;
+}
+
+.youWillLearn {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(207, 246, 128);
+    padding: 25px;
+}
+
+.ourServices {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(207, 246, 128);
+    padding: 25px;
+}
+
+
+/*************************.Home_page_div.html-End*******************************/
+
+
+
+
+@media (max-width: 1100px) {
+    /* .box_parent {
+        flex-direction: column;
+    } */
+
+    .Home_page_div {
+        width: 100%;
+    }
+
+    .search_input {
+        width: 70%;
+    }
+
+    .loading_page_logo {
+        width: 10%;
+    }
+
+}
